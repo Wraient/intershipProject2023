@@ -1,0 +1,78 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.5.15
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema garagedatabase
+--
+
+CREATE DATABASE IF NOT EXISTS garagedatabase;
+USE garagedatabase;
+
+--
+-- Definition of table `service`
+--
+
+DROP TABLE IF EXISTS `service`;
+CREATE TABLE `service` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `Name` varchar(45) NOT NULL,
+  `Mobile Number` varchar(45) NOT NULL,
+  `Email` varchar(45) NOT NULL,
+  `Vehicle Number` varchar(45) NOT NULL,
+  `Model` varchar(45) NOT NULL,
+  `Washing` int(10) unsigned NOT NULL,
+  `Oil Change` int(10) unsigned NOT NULL,
+  `Fitting` int(10) unsigned NOT NULL,
+  `Cleaning` int(10) unsigned NOT NULL,
+  `Extra` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `service`
+--
+
+/*!40000 ALTER TABLE `service` DISABLE KEYS */;
+INSERT INTO `service` (`id`,`Name`,`Mobile Number`,`Email`,`Vehicle Number`,`Model`,`Washing`,`Oil Change`,`Fitting`,`Cleaning`,`Extra`) VALUES 
+ (1,'TEST','8623963407','test@gmail.com','MH14KW7311','Hycross',100,200,300,400,0),
+ (2,'TEST','8623963407','test@gmail.com','MH14KW7311','Hycross',100,200,300,400,0),
+ (3,'RushikeshGaikwad','2903409','fdlksajf','fdlskfj','fdjwosij0923',120,550,100,100,0),
+ (4,'RutujaGAikwad','39485723948',' rutuja2777@gmail.com','MH14BH2005','Inovva',120,550,100,100,0),
+ (5,'rutu','','hdkjask4@gmail.com','32','',120,550,100,100,0),
+ (6,'','','@gmail.com','','',120,550,100,100,0),
+ (7,'rohit','6476876586','rohit234@gmail.com','MH14TC1324','JUPITER',120,550,100,100,0),
+ (8,'Rutuja Gaikwad','8983813352','rutuja2777@gmail.com','MH14KW5011','Activa 5G',120,550,100,100,0),
+ (9,'rushi','54656756','fdfd42@gmail.com','433gf65fg','fdgfhn',120,550,100,100,0),
+ (10,'Cutomized Package','2934873275','Customizedpackage@gmail.com','CH14B0123','Activa',500,300,1000,200,0),
+ (11,'test','23049','test@gmail.com','tes','test',500,500,1000,1000,0),
+ (12,'Test Two','8293487239','djfadlkfjad@gmail.com','2834ulkrejf0923r','fldksjf9023',200,300,400,500,0),
+ (13,'','','@gmail.com','','',120,550,100,100,0),
+ (14,'devendra','63879328','herkjfhr@gmail.com','jh67538gb','73687',200,500,100,100,0),
+ (15,'tikone','123456','devendra@gmail.com','mh14al1234','2011',120,550,100,100,0),
+ (16,'rutuja','8956935522','rutuja3777@gmail.com','MH14KT5678','JUPITER',120,550,100,100,0),
+ (17,'RUTUJA','557789','FGDF556@gmail.com','5GTRG5','',123,200,400,599,0);
+/*!40000 ALTER TABLE `service` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
